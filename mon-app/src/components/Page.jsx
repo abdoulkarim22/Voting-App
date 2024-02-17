@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../components/styles.css'
 
 
 export class Page extends Component {
@@ -17,8 +18,8 @@ export class Page extends Component {
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title text-start ">Card title</h5>
-                                <p className="card-text text-start ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text text-start "><img className='img' src="/image/person2.png" alt="" /></p>
+                                <p className="card-text text-start "><a className='' href="#">Tinfolid: tailored tinfoil hats</a> <br/> below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p className="card-text text-start"><span className='fw-bold'>Submitted by :</span> <img className='img' src="/image/person2.png" alt="" /></p>
                             </div>
                         </div>
                     </div>
