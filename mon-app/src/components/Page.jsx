@@ -3,11 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../components/styles.css'
 
 
-export class Page extends Component {
-    render() {
-        return (
-           <>
-            <h1>Popular Apps on Product Hunt</h1>
+import React from 'react'
+
+function Page() {
+  return (
+    <>
+        <h1>Popular Apps on Product Hunt</h1>
             <hr />
             <div className='text-center justify-content-center d-flex'>
                 <div className="card mb-3" style={{maxWidth:"500px"}}>
@@ -25,9 +26,8 @@ export class Page extends Component {
                     </div>
                 </div>
             </div>
-           </>
-        )
-    }
+    </>
+  )
 }
 
 export default Page
