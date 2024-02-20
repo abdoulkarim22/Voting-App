@@ -2,3 +2,7 @@
     width: 30px;
     border-radius: 100%;
 }
+button{
+    background-color: transparent;
+    border: none;
+}

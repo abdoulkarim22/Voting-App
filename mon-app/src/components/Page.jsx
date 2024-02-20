@@ -7,11 +7,14 @@ import { useState } from 'react';
 
 function Page() {
 
-const [counter, setCounter] = useState(0)
+const [counter, setCounter] = useState(0);
 
-const addOne = () =>{
-
+const addOne = () => {
+   setCounter(counter + 1)
 }
+const incrementer = () => {
+    setCounter(counter - 1)
+ }
 
   return (
     <>
@@ -25,7 +28,7 @@ const addOne = () =>{
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h5 className="card-title text-start "><i  class="bi bi-caret-up-fill"></i><span className='ms-2'><i class="bi bi-caret-down-fill"></i></span> <span className='ms-3'>0</span></h5>
+                                <h5 className="card-title text-start "><button onClick={addOne} ><i className="bi bi-caret-up-fill"></i></button><span className='ms-2'><button onClick={incrementer}><i className="bi bi-caret-down-fill"></i></button></span> <span  className='ms-3'>{counter}</span></h5>
                                 <p className="card-text text-start "><a className='' href="#">Tinfolid: tailored tinfoil hats</a> <br/> below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p className="card-text text-start"><span className='fw-bold'>Submitted by :</span> <img className='img' src="/image/person2.png" alt="" /></p>
                             </div>
@@ -41,7 +44,7 @@ const addOne = () =>{
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                            <h5 className="card-title text-start "><i class="bi bi-caret-up-fill"></i><span className='ms-2'><i class="bi bi-caret-down-fill"></i></span></h5>
+                            <h5 className="card-title text-start "><button ><i className="bi bi-caret-up-fill"></i></button><span className='ms-2'><i className="bi bi-caret-down-fill"></i></span> <span  className='ms-3'></span></h5>
                                 <p className="card-text text-start "><a className='' href="#">Tinfolid: tailored tinfoil hats</a> <br/> below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p className="card-text text-start"><span className='fw-bold'>Submitted by :</span> <img className='img' src="/image/person2.png" alt="" /></p>
                             </div>
@@ -57,7 +60,7 @@ const addOne = () =>{
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                            <h5 className="card-title text-start "><i class="bi bi-caret-up-fill"></i><span className='ms-2'><i class="bi bi-caret-down-fill"></i></span></h5>
+                            <h5 className="card-title text-start "><i className="bi bi-caret-up-fill"></i><span className='ms-2'><i className="bi bi-caret-down-fill"></i></span></h5>
                                 <p className="card-text text-start "><a className='' href="#">Tinfolid: tailored tinfoil hats</a> <br/> below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p className="card-text text-start"><span className='fw-bold'>Submitted by :</span> <img className='img' src="/image/person2.png" alt="" /></p>
                             </div>
@@ -73,7 +76,7 @@ const addOne = () =>{
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                            <h5 className="card-title text-start "><i class="bi bi-caret-up-fill"></i><span className='ms-2'><i class="bi bi-caret-down-fill"></i></span> </h5>
+                            <h5 className="card-title text-start "><i className="bi bi-caret-up-fill"></i><span className='ms-2'><i className="bi bi-caret-down-fill"></i></span> </h5>
                                 <p className="card-text text-start "><a className='' href="#">Tinfolid: tailored tinfoil hats</a> <br/> below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p className="card-text text-start"><span className='fw-bold'>Submitted by :</span> <img className='img' src="/image/person2.png" alt="" /></p>
                             </div>
